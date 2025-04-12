@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Akshay Jain Portfolio</title>
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .thank-you-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .thank-you-icon {
+            font-size: 5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .thank-you-title {
+            font-size: 2.5rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .thank-you-message {
+            font-size: 1.2rem;
+            color: var(--text-medium);
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .return-home {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="thank-you-container">
+        <div class="thank-you-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h1 class="thank-you-title">Thank You!</h1>
+        <p class="thank-you-message">Your message has been sent successfully. I'll get back to you as soon as possible.</p>
+        <a href="index.html" class="btn btn-primary return-home">Return to Homepage</a>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Automatically redirect back to homepage after 10 seconds
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 10000);
+
+        // Custom cursor functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursorDot = document.querySelector('.cursor-dot');
+            const cursorOutline = document.querySelector('.cursor-outline');
+
+            // Track mouse movement
+            document.addEventListener('mousemove', (e) => {
+                // Update cursor position
+                cursorDot.style.left = `${e.clientX}px`;
+                cursorDot.style.top = `${e.clientY}px`;
+
+                // Add slight delay to outline for smooth effect
+                setTimeout(() => {
+                    cursorOutline.style.left = `${e.clientX}px`;
+                    cursorOutline.style.top = `${e.clientY}px`;
+                }, 50);
+            });
+
+            // Add hover effect for interactive elements
+            const interactiveElements = document.querySelectorAll('a, button, .btn');
+
+            interactiveElements.forEach(element => {
+                element.addEventListener('mouseenter', () => {
+                    cursorDot.classList.add('cursor-hover');
+                    cursorOutline.classList.add('cursor-hover');
+                });
+
+                element.addEventListener('mouseleave', () => {
+                    cursorDot.classList.remove('cursor-hover');
+                    cursorOutline.classList.remove('cursor-hover');
+                });
+            });
+
+            // Hide cursor when leaving window
+            document.addEventListener('mouseout', (e) => {
+                if (e.relatedTarget === null) {
+                    cursorDot.style.opacity = '0';
+                    cursorOutline.style.opacity = '0';
+                }
+            });
+
+            document.addEventListener('mouseover', () => {
+                cursorDot.style.opacity = '1';
+                cursorOutline.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Jain Portfolio</title>
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Header & Navigation -->
+    <header id="main-header">
+        <nav class="container">
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#recent-work" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="social-links">
+                <a href="https://instagram.com/your_username_here" target="_blank" aria-label="Instagram Profile">
+                    <img src="insta.png" alt="Instagram Icon" class="social-icon-img">
+                    <!-- Or use Font Awesome: -->
+                    <!-- <i class="fab fa-instagram"></i> -->
+                </a>
+                <a href="https://linkedin.com/in/your_username_here" target="_blank" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/your_username_here" target="_blank" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section full-height">
+            <div class="container home-content">
+                <div class="home-text animate-on-scroll fade-in-left">
+                    <h1>Hi, I'm <span id="name-heading">Akshay Jain</span></h1>
+                    <h2>Web Developer & Tech Enthusiast</h2>
+                    <p>Passionate about creating beautiful, functional, and user-friendly web experiences. Exploring the latest technologies and building innovative solutions.</p>
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#recent-work" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="home-image animate-on-scroll fade-in-right">
+                    <img src="image.jpg" alt="Akshay Jain Profile Photo">
+                </div>
+            </div>
+            <a href="#case-studies" class="scroll-down-indicator" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">Case Studies</h2>
+                <p class="section-subtitle animate-on-scroll fade-in">Showcasing professional experience and key projects.</p>
+                <div class="case-studies-grid">
+                    <!-- Case Study 1 -->
+                    <article class="case-study-card animate-on-scroll fade-in-up" data-delay="0">
+                        <div class="card-content">
+                            <i class="fas fa-robot card-icon"></i>
+                            <h3>TEK-Connect 2024</h3>
+                            <p>Developed the 'Rescue Robo' project, focusing on autonomous navigation and problem-solving algorithms.</p>
+
+                        </div>
+                    </article>
+                    <!-- Case Study 2 -->
+                    <article class="case-study-card animate-on-scroll fade-in-up" data-delay="1">
+                        <div class="card-content">
+                            <i class="fas fa-lightbulb card-icon"></i>
+                            <h3>SIH 2024 Hackathon</h3>
+                            <p>Contributed to a team project during the Smart India Hackathon, tackling.</p>
+
+                        </div>
+                    </article>
+                    <!-- Case Study 3 -->
+                    <article class="case-study-card animate-on-scroll fade-in-up" data-delay="2">
+                         <div class="card-content">
+                            <i class="fas fa-chalkboard-teacher card-icon"></i>
+                            <h3>Web Dev Workshop</h3>
+                            <p>Organized and led a workshop on Modern Web Development practices and tools.</p>
+
+                        </div>
+                    </article>
+                    <!-- Case Study 4 -->
+                    <article class="case-study-card animate-on-scroll fade-in-up" data-delay="3">
+                        <div class="card-content">
+                             <i class="fab fa-google card-icon"></i>
+                             <h3>GDG Dev Fest Udaipur</h3>
+                             <p>Participated in Google Developer Group's Dev Fest, engaging with the tech community and learning new skills.</p>
+
+                        </div>
+                    </article>
+                     <!-- Add tool logos if relevant -->
+                     <!-- <div class="tools-used">
+                        <h4>Tools/Platforms:</h4>
+                        <img src="ClickUp logo.jpg" alt="ClickUp Logo" title="ClickUp">
+                        <img src="Dropbox logo.jpeg" alt="Dropbox Logo" title="Dropbox">
+                     </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">Skills</h2>
+                <p class="section-subtitle animate-on-scroll fade-in">My technical expertise and professional capabilities.</p>
+                <div class="skills-grid">
+                    <!-- HTML & CSS -->
+                    <div class="skill-card animate-on-scroll fade-in-up" data-delay="0">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>HTML & CSS</h3>
+                        <p>Proficient in creating responsive, accessible, and modern web layouts using semantic HTML5 and CSS3 with flexbox and grid.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="skill-card animate-on-scroll fade-in-up" data-delay="1">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Strong understanding of JavaScript fundamentals, DOM manipulation, and experience with modern ES6+ features and frameworks.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <!-- C & C++ -->
+                    <div class="skill-card animate-on-scroll fade-in-up" data-delay="2">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>C & C++</h3>
+                        <p>Solid foundation in C/C++ programming with experience in data structures, algorithms, and object-oriented programming concepts.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <!-- Problem Solving -->
+                    <div class="skill-card animate-on-scroll fade-in-up" data-delay="3">
+                        <div class="skill-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3>Problem Solving & Critical Thinking</h3>
+                        <p>Analytical approach to solving complex problems with creative solutions and attention to detail.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <!-- Project Management -->
+                    <div class="skill-card animate-on-scroll fade-in-up" data-delay="4">
+                        <div class="skill-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Project Management</h3>
+                        <p>Experience in planning, organizing, and executing projects with a focus on efficiency and meeting deadlines.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <!-- Team Collaboration -->
+                    <div class="skill-card animate-on-scroll fade-in-up" data-delay="5">
+                        <div class="skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Team Collaboration</h3>
+                        <p>Strong communication skills and ability to work effectively in diverse teams, contributing to a positive and productive environment.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Work Section -->
+        <section id="recent-work" class="section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">Projects</h2>
+                <p class="section-subtitle animate-on-scroll fade-in">A selection of my latest projects.</p>
+                <div class="recent-work-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card animate-on-scroll fade-in-up" data-delay="0">
+                        <img src="net.png" alt="Netflix Clone Project Screenshot">
+                        <div class="project-info">
+                            <h3>Netflix Clone</h3>
+                            <p>A front-end clone showcasing layout and styling skills.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/akj5335/Netflix-Clone" target="_blank" class="btn btn-primary btn-small">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card animate-on-scroll fade-in-up" data-delay="1">
+                         <img src="clock.png" alt="Analog Clock Project Screenshot">
+                         <div class="project-info">
+                            <h3>Analog Clock</h3>
+                            <p>An interactive clock built with JavaScript.</p>
+                             <div class="project-links">
+                                <a href="https://github.com/akj5335/analogue-clock" target="_blank" class="btn btn-primary btn-small">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card animate-on-scroll fade-in-up" data-delay="2">
+                         <img src="tic.png" alt="E-commerce Website Project Screenshot">
+                         <div class="project-info">
+                            <h3>Tic-tac-toe</h3>
+                            <p>Tic tac toe game</p>
+                             <div class="project-links">
+                                <a href="https://github.com/akj5335/TicTacToe" target="_blank" class="btn btn-primary btn-small">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Download Section -->
+        <section id="resume" class="section">
+            <div class="container resume-container">
+                <div class="resume-content animate-on-scroll fade-in">
+                    <div class="resume-text">
+                        <h2>Interested in my work?</h2>
+                        <p>Download my resume to learn more about my experience, skills, and qualifications.</p>
+                    </div>
+                    <div class="resume-actions">
+                        <a href="reesu.pdf" class="btn btn-primary btn-large download-btn" download>
+                            <i class="fas fa-file-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section alt-bg">
+            <div class="container contact-content">
+                <h2 class="section-title animate-on-scroll fade-in">Get In Touch</h2>
+                <p class="section-subtitle animate-on-scroll fade-in">Feel free to reach out for collaborations or inquiries.</p>
+                <div class="contact-details animate-on-scroll fade-in-up">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>akshay.j.5335@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 7665018066</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jaipur Rajasthan, India</span>
+                    </div>
+                </div>
+                <div class="contact-socials animate-on-scroll fade-in-up" data-delay="1">
+                    <a href="https://instagram.com/jn_aksh_5335/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/akshay-jain-406697292/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/akj5335/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <!-- Add other relevant social links -->
+                </div>
+
+
+                 <form action="https://formspree.io/f/xnnpwpwz" method="POST" class="contact-form animate-on-scroll fade-in-up" data-delay="2">
+                     <input type="text" name="name" placeholder="Your Name" required>
+                     <input type="email" name="email" placeholder="Your Email" required>
+                     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                     <input type="hidden" name="_subject" value="New message from Portfolio Website">
+                     <input type="hidden" name="_next" value="https://akj5335.github.io/thank-you.html">
+                     <button type="submit" class="btn btn-primary">Send Message</button>
+                 </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Akshay Jain. All rights reserved.</p>
+             <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
